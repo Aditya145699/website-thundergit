@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <style>
+      /* Add your background image to the hero section */
+      #hero {
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 46, 95, 0.7),
+            rgba(195, 195, 244, 0.7)
+          ),
+          url(https://images.unsplash.com/photo-1521737604893-d14cc237f11d);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh; /* Full height */
+      }
+
+      /* Style for the header */
+      #header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: background-color 0.3s ease;
+      }
+
+      /* Initial header background color (when at the top) */
+      .header-transparent {
+        background-color: transparent;
+      }
+
+      /* Header background color when scrolling */
+      .header-scrolled {
+        background-color: rgb(93, 153, 238);
+      }
+    </style>
+
+    <header id="header" class="bg-blue-100 body-font header-transparent">
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between">
+        <a
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+            viewBox="0 0 24 24">
+            <path
+              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl text-white">THUNDERGITS TECHNOLOGY</span>
+        </a>
+        <nav class="flex flex-wrap items-center text-base justify-end">
+          <a class="mr-5 text-white hover:text-gray-500" href="#hero">Home</a>
+          <a class="mr-5 text-white hover:text-gray-500" href="#about">About</a>
+          <a class="mr-5 text-white hover:text-gray-500" href="#services"
+            >Our Services</a
+          >
+          <a class="mr-5 text-white hover:text-gray-500" href="#contact"
+            >Contact Us</a
+          >
+          <a class="mr-5 text-white hover:text-gray-500" href="#faq">FAQ</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero" class="text-gray-600 body-font bg-im">
+      <div
+        class="container mx-auto flex h-full justify-center items-center px-5 py-24">
+        <div class="flex flex-col items-center text-center">
+          <h1
+            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+            Empowering Your Digital<br class="lg:inline-block" />Transformation
+          </h1>
+          <p class="mb-2 text-white leading-relaxed">
+            We Help You Transform Your Business With Our Expertise In Software
+            Development, Consulting, And Innovation.
+          </p>
+
+          <a href="#contact">
+            <button
+              class="pointer mt-5 inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              Contact Us
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+    60
+    <section id="about" class="text-gray-600 body-font -m-20">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h2
+            class="text-4xl text-indigo-500 tracking-widest font-medium title-font mb-3">
+            About Us
+          </h2>
+          <h1
+            class="sm:text-2xl text-2xl font-medium title-font mb-4 text-gray-900">
+            Let's Transform Together
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base mt-5">
+            Embark On A Journey Of Digital Transformation With Thundergits
+            Technologies Pvt. Ltd. Whether You're A Startup Looking To Build A
+            Disruptive Product Or An Established Enterprise Seeking To Modernize
+            Your Systems, We Have The Expertise To Make It Happen. Contact Us
+            Today, And Let's Shape The Future Of Your Business Together.
+          </p>
+        </div>
+        <a href="#services">
+          <button
+            class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            Read More
+          </button>
+        </a>
+      </div>
+    </section>
+    <section id="services" class="text-gray-600 body-font -mt-30">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-2">
+          <h2
+            class="text-4xl text-indigo-500 tracking-widest font-medium title-font mb-4">
+            Our Services
+          </h2>
+          <h1
+            class="sm:text-xl text-xs font-medium title-font mb-4 text-gray-900">
+            We Help You To Build High-Quality Digital Solutions And Products As
+            Well As Deliver A Wide Range Of Related Professional Services. We
+            Are Providing World-Class Service To Our Clients.
+          </h1>
+        </div>
+        <div class="flex items-center justify-center flex-wrap gap-5">
+          <div
+            class="service-item xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60 hover:bg-indigo-100 transition duration-300">
+            <h2 class="text-2xl text-gray-900 font-medium title-font mb-2">
+              Web Development
+            </h2>
+            <p class="leading-relaxed text-base mb-4">
+              Our Custom Web Development Services Include Both Front-End And
+              Back-End Development Using Latest MERN Tech. Whether It Is
+              Enhancing An Existing App Or Architecting An Enterprise App, Our
+              Developers Are Up For The Challenge.
+            </p>
+          </div>
+          <div
+            class="service-item xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60 hover:bg-indigo-100 transition duration-300">
+            <h2 class="text-2xl text-gray-900 font-medium title-font mb-2">
+              Mobile App Development
+            </h2>
+            <p class="leading-relaxed text-base mb-4">
+              We Have Expertise In Creating Cross-Platform Mobile App Solutions
+              For Both Android And IOS Devices. Using Flutter, Java And React
+              Native, We Offer Custom Mobile App That Runs Smoothly On Multiple
+              Platforms.
+            </p>
+          </div>
+          <div
+            class="service-item xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60 hover:bg-indigo-100 transition duration-300">
+            <h2 class="text-2xl text-gray-900 font-medium title-font mb-2">
+              Digital Marketing
+            </h2>
+            <p class="leading-relaxed text-base mb-4">
+              The Digital Marketing Services That We Provide Have Their Own Set
+              Of Charms. By Taking Our Digital Marketing Services, Our Clients
+              Will Be Able To Increase Visibility And Engage With Their
+              Customers At The Online Platform.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="records"
+      class="text-gray-600 body-font bg-fixed bg-center bg-cover bg-no-repeat"
+      style="background-image: url('./images/record-bg.jpg')">
+      <div class="container px-5 py-24 mx-auto bg-black bg-opacity-50">
+        <div class="flex flex-wrap -m-4 text-center">
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">
+              1+
+            </h2>
+            <p class="leading-relaxed text-white">Experience</p>
+          </div>
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">
+              20+
+            </h2>
+            <p class="leading-relaxed text-white">Completed Projects</p>
+          </div>
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">
+              10+
+            </h2>
+            <p class="leading-relaxed text-white">Happy Clients</p>
+          </div>
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">
+              12
+            </h2>
+            <p class="leading-relaxed text-white">Recognition Received</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Clients" class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1
+            class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+            Our Clients
+          </h1>
+          <p class="text-2xl mx-auto leading-relaxed text-base">
+            We Don't Just Build Softwares, We Build Relationship.
+          </p>
+        </div>
+        <div class="flex flex-wrap justify-center -m-4">
+          <div class="p-4">
+            <div class="flex relative">
+              <img
+                alt="gallery"
+                class="w-100 h-100 object-cover object-center"
+                src="https://brainlampsolutions.com/images/gec_arwal.png" />
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex relative">
+              <img
+                alt="gallery"
+                class="w-60 h-60 object-cover object-center"
+                src="https://brainlampsolutions.com/images/geekashram.png" />
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex relative">
+              <img
+                alt="gallery"
+                class="w-60 h-60 object-cover object-center"
+                src="https://brainlampsolutions.com/images/idm_institute.png" />
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex relative">
+              <img
+                alt="gallery"
+                class="w-50 h-50 object-cover object-center"
+                src="https://brainlampsolutions.com/images/aiia_delhi.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="faq"
+      class="py-12 bg-cover bg-center relative"
+      style="background-image: url('./images/faq-bg.jpg')">
+      <div class="container mx-auto px-6 relative z-10">
+        <div
+          class="text-center mb-12 bg-white bg-opacity-80 p-6 rounded-lg shadow-lg">
+          <h2 class="text-3xl font-bold">Frequently Asked Questions</h2>
+          <p class="mt-4 text-gray-600">
+            Find answers to the most frequently asked questions below.
+          </p>
+        </div>
+        <div class="space-y-4">
+          <div
+            class="faq-item border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition duration-300 bg-white bg-opacity-80">
+            <button
+              class="w-full text-left flex items-center justify-between"
+              onclick="toggleFaq(event)">
+              <span class="text-xl font-medium">How Much Will It Cost?</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-content mt-4 hidden">
+              <p>
+                To Get A Better Idea Of The Cost Of What You Want To Build, Give
+                Us A Quick Phone Call. We’ll Ask You A Few Questions About The
+                Nature Of The Site, What Sort Of Interactivity The Site Will
+                Have, Your Graphic Design Needs, Etc. Then We’ll Be Able To Give
+                You A Ballpark Figure. If You’re Still Interested, We’ll Come To
+                Your Place Of Business And Come Up With A Firm Quote.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="faq-item border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition duration-300 bg-white bg-opacity-80">
+            <button
+              class="w-full text-left flex items-center justify-between"
+              onclick="toggleFaq(event)">
+              <span class="text-xl font-medium"
+                >How Long It Takes To Design?</span
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-content mt-4 hidden">
+              <p>
+                The Time Limit Of Any Assignment Is Normally Dictated By The
+                Client. If You Have Any Time Limit In Mind We Will Attempt To
+                Assemble It For You. The Main General Delay In The Making Of A
+                Website Is Waiting For The Content Of The Pages To Be Sent To Us
+                By The Client.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="faq-item border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition duration-300 bg-white bg-opacity-80">
+            <button
+              class="w-full text-left flex items-center justify-between"
+              onclick="toggleFaq(event)">
+              <span class="text-xl font-medium"
+                >How Do I Associate With IT Company?</span
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-content mt-4 hidden">
+              <p>
+                The Process Begins When You Contact Us With Your Requirements.
+                We Analyze Your Requirements And Respond To You. On The Basis Of
+                The Further Discussion, You Can Choose An Engagement Model That
+                Suits You The Best. After That, We Begin The Process Of
+                Development.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="faq-item border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition duration-300 bg-white bg-opacity-80">
+            <button
+              class="w-full text-left flex items-center justify-between"
+              onclick="toggleFaq(event)">
+              <span class="text-xl font-medium"
+                >Can You Help To Build My Idea?</span
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-content mt-4 hidden">
+              <p>
+                Yes. Give Us Your Requirements And We Have Experienced Expertise
+                To Help You Give A New Professional Look That Really Wonders!
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="faq-item border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition duration-300 bg-white bg-opacity-80">
+            <button
+              class="w-full text-left flex items-center justify-between"
+              onclick="toggleFaq(event)">
+              <span class="text-xl font-medium">When Do I Pay?</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-content mt-4 hidden">
+              <p>
+                For Most Projects, Equal Payments Are Made At The Start, Midway,
+                And The End Of The Project, But We Can Work With You To Set Up A
+                Schedule That Meets Your Needs. We Understand That This Is A Big
+                Investment And Want To Help You Budget For The Expense In
+                Whatever Way Possible. We Only Accepts Digital Payments Via
+                NEFT/RTGS/UPI In Company Bank Account Only.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute inset-0 bg-gray-900 opacity-50 z-0"></div>
+    </section>
+
+    <section id="contact" class="text-gray-600 body-font relative">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-12">
+          <h1 class="text-4xl font-medium title-font mb-4 text-gray-900">
+            Contact Us
+          </h1>
+        </div>
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+          <form
+            id="contact-form"
+            class="flex flex-wrap -m-2"
+            action="https://formspree.io/f/xzzpbjgl"
+            method="POST">
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="name" class="leading-7 text-sm text-gray-600"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="email" class="leading-7 text-sm text-gray-600"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="message" class="leading-7 text-sm text-gray-600"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <button
+                type="submit"
+                class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                Submit
+              </button>
+            </div>
+            <div
+              class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+              <a class="text-indigo-500">thundergits@gmail.com</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-gray-600 body-font bg-blue-100">
+      <div
+        class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div
+          class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+          <a
+            class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+              viewBox="0 0 24 24">
+              <path
+                d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Thundergits Technologies</span>
+          </a>
+          <p class="mt-2 text-sm text-gray-500">
+            Always in the services of our client.
+          </p>
+        </div>
+        <div
+          class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+          <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+            <h2
+              class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+              ABOUT US
+            </h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="#hero"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="#about"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="#services"
+                  >Our Services</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800"
+                  >Terms & Condition</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">Privacy Policy</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+            <h2
+              class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+              USEFUL LINKS
+            </h2>
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="#contact"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="#faq">Faq</a>
+              </li>
+            </nav>
+          </div>
+
+          <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+            <h2
+              class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+              CONTACT US
+            </h2>
+            <p class="mt-2 text-sm text-gray-500">
+              Email:
+              <span class="text-blue-600">thundergits@gmail.com </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-100">
+        <div
+          class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+          <p class="text-gray-500 text-sm text-center sm:text-left">
+            © 2024 Thundergits Technologies
+          </p>
+          <span
+            class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+            <a class="ml-3 text-gray-500" target="_blank">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a
+              class="ml-3 text-gray-500"
+              href="https://www.instagram.com/thundergits_technologies/"
+              target="_blank">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500" target="_blank">
+              <svg
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="0"
+                class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path
+                  stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.getElementById("header");
+      const hero = document.getElementById("hero");
+      const heroBottom = hero.getBoundingClientRect().bottom;
+
+      if (window.scrollY > heroBottom) {
+        header.classList.add("header-scrolled");
+        header.classList.remove("header-transparent");
+      } else {
+        header.classList.add("header-transparent");
+        header.classList.remove("header-scrolled");
+      }
+    });
+
+    function toggleFaq(event) {
+      const faqItem = event.currentTarget.parentElement;
+      const faqContent = faqItem.querySelector(".faq-content");
+      faqContent.classList.toggle("hidden");
+
+      const icon = event.currentTarget.querySelector("svg");
+      icon.classList.toggle("transform");
+      icon.classList.toggle("rotate-180");
+    }
+
+    function toggleFaq(event) {
+      const faqItem = event.currentTarget.parentElement;
+      const faqContent = faqItem.querySelector(".faq-content");
+      faqContent.classList.toggle("hidden");
+
+      const icon = event.currentTarget.querySelector("svg");
+      icon.classList.toggle("transform");
+      icon.classList.toggle("rotate-180");
+    }
+  </script>
+</html>
